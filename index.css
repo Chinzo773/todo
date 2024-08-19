@@ -1,0 +1,127 @@
+* {
+    font-family: "VT323", monospace;
+    font-weight: 400;
+    font-style: normal;
+}
+
+#container {
+    border-radius: 30px;
+    border-color: rgb(67, 67, 215);
+    border-style: solid;
+    padding: 10px;
+    border-width: 20px;
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    height: 35vh;
+    background-color: rgb(239, 236, 236);
+    background-image: url('sheesh.jpg');
+    background-size: cover;
+}
+
+#add_style {
+    background-color: #4169E1;
+    border-radius: 9px;
+    border: none;
+    color: white;
+    padding: 10px;
+    width: 70px;
+}
+
+#task_input {
+    border-color: #ced1da;
+    border-radius: 6px;
+    padding: 8px;
+    width: 50%;
+}
+
+.edit_input {
+    border-color: #ced1da;
+    border-radius: 6px;
+    padding: 4px;
+    width: 100%;
+}
+
+#input_container {
+    width: 500px;
+    justify-content: space-between;
+    display: flex;
+}
+
+#list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    height: 290px;
+    overflow-y: auto;
+}
+
+.inner_list{
+    border-color: #d1d1d2;
+    border-style: solid;
+    border-width: 3px;
+    width: 500px;
+    border-radius: 8px;
+    padding: 10px;
+    display: flex; 
+    justify-content: space-between;
+    background-color: #456ee8;
+}
+
+.delete_style {
+    border-color: #d1d1d2;
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 5px;
+    width: 24px;
+    height: 24px;
+    background-color: rgb(170, 19, 19);
+}
+
+.edit_style {
+    border-color: #d1d1d2;
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 5px;
+    width: 24px;
+    height: 24px;
+    background-color: rgb(244, 170, 79);
+}
+
+.button_loc {
+    gap: 3px;
+    display: flex;
+    align-items: center;
+}
+
+.todo_text {
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    overflow-x: auto;
+}
+
+#time{
+    border-color: #ced1da;
+    border-radius: 6px;
+    padding: 6px;
+}
+
+
+.left_style {
+    display: flex;
+    gap: 10px;
+    width: 80%;
+}
+
+.time_style {
+    display: flex;
+    align-items: center;
+    color: #aeb1b9;
+    border-right: #b7c1df;
+    border-right-style:solid ;
+    padding: 4px;
+}
