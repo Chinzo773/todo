@@ -5,7 +5,16 @@ add_button.addEventListener('click', function(){
 })
 
 function add_list(){
-    const times = document.getElementById('time').value
+    const date = new Date();
+    const formatter = new Intl.DateTimeFormat("en-GB", {
+      year: "numeric",
+      month: "2-digit",
+      day: "2-digit",
+      hour: "2-digit",
+      minute: "2-digit",
+    });
+    const formattedTime = formatter.format(date);
+    console.log(formattedTime)
     const list = document.getElementById('list')
     const button_loc = document.createElement('div')
     const text_span = document.createElement('div')
@@ -14,7 +23,7 @@ function add_list(){
     const input_value = input.value
     const left = document.createElement('div')
     const time = document.createElement('div')
-    time.innerHTML = times
+    time.innerHTML = formattedTime
     
 
     text_span.className = 'todo_text'
