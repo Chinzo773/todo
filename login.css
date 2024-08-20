@@ -1,0 +1,24 @@
+#container {
+    border-style: solid;
+    border-color: blue;
+    border-width: 20px;
+    border-radius: 30px;
+    width: 400px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    background-color:rgb(213, 229, 235) ;
+}
+
+input {
+    border: 5px solid lightblue;
+    border-radius: 5px;
+}
+
+#submit {
+    border: 2px solid lightblue;
+    border-radius: 5px;
+}

@@ -3,21 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="index.css"/>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=VT323&display=swap" rel="stylesheet">
-    <title>Document</title>
+    <link rel="stylesheet" href="login.css"/>
+    <title>login</title>
 </head>
-<body style="display: flex; justify-content: center;align-items: center; height: 90vh;background-color: rgb(42, 168, 236);">
+<body style="display: flex; justify-content: center;align-items: center;background-color: rgb(81, 197, 229);height: 90vh;">
     <div id="container">
-        <div id="input_container">
-            <input id="task_input" type="text">
-            <button id="add_style">Add</button>
+        <input id="email">
+        <input id="number">
+        <div style="width: 153px;">
+            <input id="pass" type="password" placeholder="password" style="width: 50%;">
+            <button id="pass_button">Show</button>
         </div>
-        <div id="list">
-        </div>
+        <button id="button">submit</button>
     </div>
-    <script src="index.js"></script>
+    <script src="login.js"></script>
 </body>
-</html> 
+</html>

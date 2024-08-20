@@ -4,6 +4,10 @@ add_button.addEventListener('click', function(){
     add_list()
 })
 
+const email_element = document.getElementById('email')
+const email = localStorage.getItem('email')
+email_element.innerHTML = 'Hello ' + email
+
 function add_list(){
     const date = new Date();
     const formatter = new Intl.DateTimeFormat("en-GB", {
@@ -89,3 +93,5 @@ function add_list(){
     list.appendChild(list_div)
     input.value = ''
 }
+
+
