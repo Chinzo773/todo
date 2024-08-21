@@ -1,6 +1,6 @@
 #container {
     border-style: solid;
-    border-color: blue;
+    border-color: linear-gradient(rgba(81, 81, 156, 0.5), rgba(255, 255, 0, 0.5));
     border-width: 20px;
     border-radius: 30px;
     width: 400px;
@@ -10,7 +10,7 @@
     justify-content: center;
     align-items: center;
     gap: 30px;
-    background-color:rgb(213, 229, 235) ;
+    background-image: linear-gradient(rgba(0, 0, 255, 0.5), rgba(255, 255, 0, 0.5))
 }
 
 input {

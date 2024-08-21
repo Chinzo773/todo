@@ -13,7 +13,7 @@ button.addEventListener('click', function (){
     email_checker()
     number_checker()
     pass_checker()
-    if (conditioner == 4){
+    if (email_stat == true && number_stat == true && pass_stat == true){
         window.location.assign('todo.html')
     }
 })
@@ -22,22 +22,23 @@ pass_button.addEventListener('click', function(){
     pass_shower()
 })
 
-
+let email_stat = false
+let number_stat = false
+let pass_stat = false
 
 function email_checker(){
     let email_value = email.value
 
     if (email_value.includes('@') == true){
-        console.log('Email is valid')
         localStorage.setItem('email', email_value)
-        conditioner += 1
-        // const email = localStorage.getItem('email')
+        email_stat = true
+        email.value = ''
     }else {
-        console.log('Email doesnt have @')
+        alert('Email is invalid')
+        email_stat = false
     }
 }
 
-let conditioner = 0
 
 function number_checker(){
     let number_length = number.value.length
@@ -47,19 +48,21 @@ function number_checker(){
     if (number_length == 8 ){
         for (let j = 0; j < let_arr.length; j++){
             if (number_value.includes(let_arr[j]) == true){
-                console.log('shi has letter')
+                alert('number is invalid')
+                number_stat = false
                 break
             }else {
                 number_dump += 1
                 if (number_dump == 26){
-                    console.log('Number is valid')
-                    conditioner += 1
+                    number_stat = true
+                    number.value = ''
                     break
                 }
             }
         }
     }else{
-        console.log('number isnt 8 length')
+        alert('number is invalid')
+        number_stat = false
     }   
 
 
@@ -89,13 +92,14 @@ function pass_checker(){
                 for (let i=0; i < 10; i++){
                     if (pass_value.includes(i) == true){
                         console.log('pass is valid')
-                        conditioner += 1
+                        pass_stat = true
                         break
                     }else{
                         dump += 1
     
                         if (dump == 10){
-                            console.log('shi has no numbers')
+                            alert('password is invalid')
+                            pass_stat = false
                             break
                         }
                     }
@@ -103,7 +107,8 @@ function pass_checker(){
             }
         }
     }else{
-        console.log('pass not long')
+        alert('password is invalid')
+        pass_stat = false
     }
 
     
