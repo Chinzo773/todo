@@ -48,7 +48,7 @@ function number_checker(){
     if (number_length == 8 ){
         for (let j = 0; j < let_arr.length; j++){
             if (number_value.includes(let_arr[j]) == true){
-                alert('number is invalid')
+                alert('number contains letter')
                 number_stat = false
                 break
             }else {
@@ -62,7 +62,7 @@ function number_checker(){
             }
         }
     }else{
-        alert('number is invalid')
+        alert('number must be 8 in length')
         number_stat = false
     }   
 
@@ -99,7 +99,7 @@ function pass_checker(){
                         dump += 1
     
                         if (dump == 10){
-                            alert('password is invalid')
+                            alert('password must contain number')
                             pass_stat = false
                             break
                         }
@@ -108,7 +108,7 @@ function pass_checker(){
             }
         }
     }else{
-        alert('password is invalid')
+        alert("password's length must be 8 or more")
         pass_stat = false
     }
 
