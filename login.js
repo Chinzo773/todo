@@ -55,6 +55,7 @@ function number_checker(){
                 number_dump += 1
                 if (number_dump == 26){
                     number_stat = true
+                    localStorage.setItem('number', number_value)
                     number.value = ''
                     break
                 }

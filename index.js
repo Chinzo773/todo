@@ -6,7 +6,12 @@ add_button.addEventListener('click', function(){
 
 const email_element = document.getElementById('email')
 const email = localStorage.getItem('email')
-email_element.innerHTML = 'Hello ' + email
+email_element.innerHTML = email
+
+const num_element = document.getElementById('number')
+const num = localStorage.getItem('number')
+console.log(num)
+num_element.innerHTML = num
 
 function add_list(){
     const date = new Date();
@@ -45,6 +50,7 @@ function add_list(){
 
 
     const delete_button = document.createElement('button');
+    delete_button.innerHTML = 'Delete'
     delete_button.className = 'delete_style';
 
     delete_button.addEventListener('click', function() {
@@ -53,6 +59,7 @@ function add_list(){
 
 
     const edit_button = document.createElement('button')
+    edit_button.innerHTML = 'Edit'
     edit_button.className = 'edit_style'
 
     edit_button.addEventListener('click', function() {
@@ -61,6 +68,7 @@ function add_list(){
         edit_input.className = 'edit_input'
 
         edit_input.value = text_span.innerHTML
+        confirm_button.innerHTML = 'Confirm'
 
         let saved_text = text_span.innerHTML
 

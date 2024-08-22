@@ -7,16 +7,26 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=VT323&display=swap" rel="stylesheet">
-    <title>Document</title>
+    <title>To Do List</title>
 </head>
-<body style="display: flex; justify-content: center;align-items: center; height: 100vh;background-image: linear-gradient(rgba(0, 0, 255, 0.5), rgba(255, 255, 0, 0.5));flex-direction: column;">
-    <h1 id="email"></h1>
+<body style="display: flex; justify-content: center;align-items: center; height: 100vh;background-image: linear-gradient(rgba(0, 0, 255, 0.5), rgba(255, 255, 0, 0.5));">
+    <!-- <h1 id="email"></h1> -->
     <div id="container">
         <div id="input_container">
             <input id="task_input" type="text">
             <button id="add_style">Add</button>
         </div>
         <div id="list">
+        </div>
+    </div>
+    <div id="info">
+        <div>
+            <h4 style="color: gray;">Email:</h4>
+            <h2 id="email"></h2>
+        </div>
+        <div>
+            <h4 style="color: gray;">Phone Number:</h4>
+            <h2 id="number"></h2>
         </div>
     </div>
     <script src="index.js"></script>
